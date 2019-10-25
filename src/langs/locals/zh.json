@@ -1,0 +1,6 @@
+{
+    "Required": "The field is required!",
+    "type": "Select",
+    "submitSuccess": "Submit Success",
+    "submitFailed": "Submit Failed"
+}

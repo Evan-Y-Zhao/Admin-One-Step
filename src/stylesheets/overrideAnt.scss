@@ -1,0 +1,45 @@
+.ant-layout-header {
+    padding: 0;
+    background: $header;
+}
+
+.ant-menu-inline {
+    height: 100%;
+}
+
+.ant-layout {
+    min-height: inherit;
+}
+
+.ant-popover-inner {
+    background-color: #f0f2f5 !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected {
+    background-color: #FFF0EB !important;
+}
+
+.ant-tabs-tabpane-active {
+    padding: 0 24px;
+}
+
+.avatar-uploader > .ant-upload {
+    width: 128px !important;
+    height: 128px;
+}
+
+.ant-select-selection {
+    border-radius: 0 !important;
+}
+.ant-input {
+    border-radius: 0 !important;
+}
+
+.ant-menu-item.ant-menu-item-selected::after {
+    border-right: 3px solid $primary-color;
+}
+
+
+.ant-upload.ant-upload-disabled {
+    cursor: not-allowed;
+}

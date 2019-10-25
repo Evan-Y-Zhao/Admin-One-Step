@@ -1,0 +1,62 @@
+.ant-table-wrapper {
+    .ant-spin-nested-loading {
+        .ant-spin-container {
+            .ant-table {
+                color: #444444;
+                font-size: 1rem;
+
+                .ant-table-thead{
+                    tr{
+                      th{
+                            padding: 1rem;
+                            color: #444444;
+                            font-weight: 800;
+                            background: #FFFFFF;
+                            border-bottom: 1px solid #CCCCCC;
+                        }  
+                    }
+                }
+                               
+                .ant-table-tbody{
+                    tr{
+                        td {
+                            padding: 1rem;
+                            border-bottom: 1px solid #e8e8e8;
+
+                            .edit-icon{
+                                color: #669CF4;
+                                font-size: 1.2rem;
+                                margin-right: 0.5rem;
+                            }
+
+                            .delete-icon{
+                                color: #DC222B;
+                                font-size: 1.2rem; 
+                                margin-right: 0.5rem;  
+                                cursor: pointer; 
+                            }
+
+                            .link-icon{
+                                color: #669CF4;
+                                font-size: 1rem; 
+                                margin-right: 0.5rem;  
+                                cursor: pointer; 
+                            }
+
+                            .link-icon-red{
+                                color: #D42222;
+                                font-size: 1rem; 
+                                margin-right: 0.5rem;  
+                                cursor: pointer; 
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+.ant-pagination {
+    margin: 2rem 0 0 0 !important;
+}

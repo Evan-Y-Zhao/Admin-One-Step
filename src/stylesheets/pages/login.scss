@@ -1,0 +1,73 @@
+@media (max-width: 400px) {
+    .admin-login {
+        width: 80%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 960px) {
+    .admin-login {
+        width: 50%;
+    }
+}
+
+@media (min-width: 960px) {
+    .admin-login {
+        width: 33%;
+    }
+}
+
+
+.login-title-first {
+    font-size: 1.8rem;
+    color: #e84646;
+    margin-bottom: 1rem
+}
+
+.login-title-second {
+    font-size: 1.5rem;
+    color: #e84646;
+    margin-bottom: 5rem;
+}
+
+.login-form-button {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.admin-error-text {
+    text-align: right;
+    color: red;
+    font-size: 0.9rem;
+    padding: 0.2rem 0; 
+}
+
+.admin-input {
+    
+
+    display: flex;
+    border-bottom: .1rem solid #b1b1b1;
+    margin-top: 1rem;
+    color: #b1b1b1;
+
+    label {
+        display: flex;
+        align-items: center;
+        flex-basis: 17%;
+        flex-grow: 1;
+        font-weight: 400;
+        
+    }
+    input {
+        border: none;
+        background: none;
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    &.has-error {
+        border-color: red !important;
+        color: red !important;
+    }
+}

@@ -1,0 +1,228 @@
+.device-wrapper {
+    max-width: 236px;
+    width: 236px;
+    margin-left: 2%;
+    height: 474px;
+    position: relative;
+}
+
+.device {
+    position: relative;
+    width: 236px;
+    background-size: cover;
+}
+
+.device .screen {
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.device .button {
+    position: absolute;
+    cursor: pointer;
+}
+
+.device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] {
+    height: 100%;
+    background-image: url(../images/iPhoneX_DeviceFrame_2x.png);
+    z-index: initial;
+}
+
+.device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] .screen {
+    top: 14%;
+    left: 7.162534435%;
+    width: 85.67493113%;
+    height: 72.49030471%;
+    overflow: hidden;
+    border: 0px;
+    z-index: 1;
+    word-break: break-all;
+}
+
+.device-background {
+    width: 206px;
+    position: absolute;
+    height: 95%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.activity-root {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+
+        i svg {
+            width: 15px;
+            height: 15px;
+        }
+
+        .account-icon {
+            display: flex;
+
+            .shopping-cart {
+                margin-right: 10px;
+                position: relative;
+
+                .count {
+                    /* number of items indicator */
+                    font-size: 0.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    list-style: none;
+                    top: 1px;
+                    right: -3px;
+                    width: 8px;
+                    height: 8px;
+                    background: #e94b35;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    text-indent: 0;
+                    transition: transform .2s .5s;
+                }
+            }
+        }
+    }
+
+    .image-section {
+        height: 100px;
+    }
+
+    .body-section {
+        padding-bottom: 40px;
+    }
+
+    .check-detail {
+        padding-left: 1rem;
+        font-size: 0.7rem;
+        color: #2E64AB;
+    }
+
+    .diabeld-button {
+        background: #f3f5f8 !important;
+        color: #333333 !important;
+    }
+
+    .shadow-box {
+        margin-top: 10px;
+
+        .border-shadow {
+            height: 0.3rem;
+            display: flex;
+
+            .left-over {
+                width: 20%;
+                height: 100%;
+            }
+
+            .center {
+                width: 60%;
+                height: 100%;
+                opacity: 0.4;
+            }
+        }
+
+        .border-shadow-2 {
+            height: 0.7rem;
+            display: flex;
+
+            .left-over {
+                width: 15%;
+                height: 100%;
+            }
+
+            .center {
+                width: 70%;
+                height: 100%;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .activity-detail {
+        position: relative;
+        margin: 0 20px 20px;
+        padding: 15px;
+        background-color: #F3F5F8;
+        margin-bottom: 10px;
+        border-radius: 4px;
+
+        .line {
+            padding: 0 10px;
+            font-size: 1.1rem;
+            background-color: #F3F5F8;
+        }
+
+        .detail-content {
+            height: 80px;
+            line-height: 20px;
+            overflow: hidden;
+            word-break: break-all;
+
+            // span { word-break: break-all }
+       
+        }
+
+        .readMore {
+            margin-top: 3px;
+            text-align: center;
+            
+            button {
+                height: 20px;
+                display: inline-flex;
+                i svg {
+                    color: #fff;
+                }
+            }
+            span {
+                color: #fff;
+                font-size: 0.7rem;
+                line-height: 15px;
+            }
+        }
+
+    }
+
+    .expandMore {
+        animation: jump 1.5s ease 0s infinite normal;
+    }
+
+    @keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+
+        20% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-4px);
+        }
+
+        50% {
+            transform: translateY(0);
+        }
+
+        60% {
+            transform: translateY(-2px);
+        }
+
+        80% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
